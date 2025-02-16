@@ -1,0 +1,116 @@
+import React from 'react';
+
+const LandingPage = () => {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-100 dark:bg-gradient-to-br dark:from-gray-900 dark:to-gray-800 text-gray-800 dark:text-gray-200 antialiased">
+      <header className="py-6 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl mx-auto flex items-center justify-between">
+          <a href="/" className="text-2xl font-semibold text-purple-600 dark:text-purple-400">
+            Project Genesis
+          </a>
+          <nav className="space-x-4">
+            <a href="#features" className="hover:text-purple-500 dark:hover:text-purple-300 transition-colors duration-200">
+              Features
+            </a>
+            <a href="#community" className="hover:text-purple-500 dark:hover:text-purple-300 transition-colors duration-200">
+              Community
+            </a>
+            <a href="#impact" className="hover:text-purple-500 dark:hover:text-purple-300 transition-colors duration-200">
+              Impact
+            </a>
+            <a href="#join" className="px-4 py-2 bg-purple-600 dark:bg-purple-500 text-white rounded-md hover:bg-purple-700 dark:hover:bg-purple-600 transition-colors duration-200">
+              Join Now
+            </a>
+          </nav>
+        </div>
+      </header>
+
+      <main className="py-12 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl mx-auto text-center">
+          <h1 className="text-4xl font-extrabold text-gray-900 dark:text-white mb-4">
+            Unleash Your Potential with Project Genesis
+          </h1>
+          <p className="text-lg text-gray-600 dark:text-gray-400 mb-8">
+            A transformative platform connecting you to yourself, others, and the world.
+          </p>
+          <a href="#explore" className="inline-block px-8 py-3 bg-purple-600 dark:bg-purple-500 text-white rounded-md text-lg hover:bg-purple-700 dark:hover:bg-purple-600 transition-colors duration-200">
+            Explore the Future
+          </a>
+        </div>
+      </main>
+
+      <section id="features" className="py-12 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl font-semibold text-gray-900 dark:text-white text-center mb-8">
+            Key Features
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Feature 1: Intuitive Interface */}
+            <div className="p-6 bg-gray-50 dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+              <h3 className="text-xl font-semibold text-purple-600 dark:text-purple-400 mb-2">
+                Intuitive Interface
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400">
+                Simple, personalized, and accessible design for everyone.
+              </p>
+            </div>
+            {/* Feature 2: Immersive Experiences */}
+            <div className="p-6 bg-gray-50 dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+              <h3 className="text-xl font-semibold text-purple-600 dark:text-purple-400 mb-2">
+                Immersive Experiences
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400">
+                AR, VR, and AI combine to create transformative experiences.
+              </p>
+            </div>
+            {/* Feature 3: Community Building */}
+            <div className="p-6 bg-gray-50 dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+              <h3 className="text-xl font-semibold text-purple-600 dark:text-purple-400 mb-2">
+                Community Building
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400">
+                Connect with others, share ideas, and build meaningful relationships globally.
+              </p>
+            </div>
+            {/* Feature 4: Personal Growth */}
+            <div className="p-6 bg-gray-50 dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+              <h3 className="text-xl font-semibold text-purple-600 dark:text-purple-400 mb-2">
+                Empowerment and Personal Growth
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400">
+                Tools for mindfulness, skill development, and overall well-being.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="impact" className="py-12 px-4 sm:px-6 lg:px-8 bg-blue-50 dark:bg-gray-800">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl font-semibold text-gray-900 dark:text-white mb-8">
+            Our Social Impact
+          </h2>
+          <p className="text-lg text-gray-600 dark:text-gray-400 mb-8">
+            Facilitating involvement in global initiatives for sustainability, equality, and humanitarian efforts.
+          </p>
+          <div className="flex justify-center space-x-4">
+            <a href="#learn-more" className="px-6 py-3 bg-purple-600 dark:bg-purple-500 text-white rounded-md hover:bg-purple-700 dark:hover:bg-purple-600 transition-colors duration-200">
+              Learn More
+            </a>
+            <a href="#support" className="px-6 py-3 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-md hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors duration-200">
+              Support Us
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <footer className="py-6 px-4 sm:px-6 lg:px-8 bg-gray-100 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
+        <div className="max-w-3xl mx-auto text-center text-gray-500 dark:text-gray-400">
+          <p>&copy; 2025 Project Genesis. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  );
+};
+
+export default LandingPage;
